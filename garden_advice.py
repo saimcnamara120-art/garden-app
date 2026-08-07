@@ -1,6 +1,6 @@
-# Hardcoded values for the season and plant type
-season = "summer"  # TODO: Replace with input() to allow user interaction.
-plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
+# Ask the user to enter the season and plant type
+season = input("Enter the season (summer/winter): ").lower()
+plant_type = input("Enter the plant type (flower/vegetable): ").lower()
 
 # Variable to hold gardening advice
 advice = ""
@@ -22,6 +22,7 @@ else:
     advice += "No advice for this type of plant."
 
 # Print the generated advice
+print("\nGardening Advice:")
 print(advice)
 
 # TODO: Examples of possible features to add:
